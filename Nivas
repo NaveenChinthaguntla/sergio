@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url(kodal.jpg);
+            background-size: 100% 1000px;
+            background-repeat: no-repeat;
+        }
+        .parent{
+            width: 100%;
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+        }
+        .parent ul{
+            display: inline-flex;
+            list-style: none;
+            font-size: 30px;
+        }
+        .parent ul li{
+            margin: 25px;
+            padding: 25px;
+        }
+        .list:hover{
+            background-color: orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        }
+        a{
+            text-decoration: none;
+        }
+        .parent1{
+            display: none;
+        }
+        .parent ul li:hover .parent1{
+            display: block;
+            background-color:chartreuse;
+            position: absolute;
+            margin-left: 30px;
+            border-radius: 20px;
+            border: 3px solid red;
+        }
+        .parent ul li:hover .parent1 ul{
+            display: block;
+        }
+        .parent ul li:hover .parent1 ul li{
+            border-bottom: 2px solid red;
+        }
+        .parent ul li:hover .parent1 ul li:last-child{
+          border-bottom: none;
+        }
+        .list1:hover{
+            background-color:orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        } 
+        .parent2{
+            display: none;
+        }
+        .list1:hover .parent2{
+            display: block;
+            background-color: hotpink;
+            margin-left: 200px;
+            position: absolute;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        .list2:hover{
+            background-color: orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        }
+        .parent3{
+            display: none;
+        }
+        .list2:hover .parent3{
+            display: block;
+            background-color: aqua;
+            margin-left: 200px;
+            position: absolute;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        .list3:hover{
+            background-color: orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        }
+        .parent4{
+            display: none;
+        }
+        .list3:hover .parent4{
+            display: block;
+            background-color: blueviolet;
+            position: absolute;
+            margin-left: 200px;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        .list4:hover{
+            background-color: orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        }
+        .parent5{
+            display: none;
+        }
+        .list4:hover .parent5{
+            display: block;
+            background-color: green;
+            position: absolute;
+            margin-left: 200px;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        .list5:hover{
+            background-color: orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        }
+        .parent6{
+            display: none;
+        }
+        .list5:hover .parent6{
+            display: block;
+            background-color: blue;
+            position: absolute;
+            margin-left: 200px;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        .list6:hover{
+            background-color: orangered;
+            border-radius: 10px;
+            border: 3px solid red;
+        }
+        .parent7{
+            display: none;
+        }
+        .list6:hover .parent7{
+            display: block;
+            background-color: blue;
+            position: absolute;
+            margin-left: 200px;
+            border-radius: 30px;
+            border: 3px solid red;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <ul>
+        <li class="list" ><a href="#">Web-technology</a>
+        <div class="parent1">
+            <ul>
+                <li class="list1">HTML
+                    <div class="parent2">
+                        <ul>
+                            <li class="list2">tags
+                                <div class="parent3">
+                                    <ul>
+                                        <li>samp</li>
+                                        <li>kbd</li>
+                                        <li>var</li>
+                                        <li>pre</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list3">headings
+                                <div class="parent4">
+                                    <ul>
+                                        <li>h1</li>
+                                        <li>h2</li>
+                                        <li>h3</li>
+                                        <li>h4</li>
+                                        <li>h5</li>
+                                        <li>h6</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list4">frames
+                                <div class="parent5">
+                                    <ul>
+                                        <li>rows</li>
+                                        <li>cols</li>
+                                        <li>frameborder</li>
+                                        <li>framespacing</li>
+                                        <li>border</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list5">CSS
+                    <div class="parent6">
+                        <ul>
+                            <li>inline css</li>
+                            <li>internal css</li>
+                            <li>external css</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="list6">JAVA SCRIPT
+                    <div class="parent7">
+                        <ul>
+                            <li>jquery</li>
+                            <li>Bootstrap</li>
+                            <li>CSS3</li>
+                            <li>Reactjs</li>
+                            <li>Vue Js</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div></li>
+        <li class="list" ><a href="#">Java</a>
+            <div class="parent1">
+                <ul>
+                    <li>programming</li>
+                    <li>core java</li>
+                    <li>java library</li>
+                </ul>
+                </div>
+            </li>
+        <li class="list" ><a href="#">Sql</a>
+            <div class="parent1">
+                <ul>
+                    <li>tables</li>
+                    <li>DBMS</li>
+                    <li>joins</li>
+                </ul>
+                </div></li>
+        <li class="list" ><a href="#">Advance java</a>
+            <div class="parent1">
+                <ul>
+                    <li>Front End</li>
+                    <li>Back End</li>
+                </ul>
+                </div></li>
+        
+    </ul>
+</div>
+</body>
+</html>
